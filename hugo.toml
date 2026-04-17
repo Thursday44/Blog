@@ -1,4 +1,3 @@
-```
 baseURL = 'https://blog.nessahagoz.com/'
 languageCode = 'en-us'
 title = 'Essays by Nessa'
@@ -6,4 +5,4 @@ title = 'Essays by Nessa'
 [params]
   author = "Nessa"
   description = "Musings about life, relationships, mental health, and the things we usually walk right past. Personal stories with a bit of philosophy mixed in."
-```
+
