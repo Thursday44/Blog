@@ -568,9 +568,9 @@
             <span class="essay-date">{{ .Date.Format "Jan 2006" }}</span>
             <span class="essay-read-time">{{ .ReadingTime }} min read</span>
           </div>
-          <h2 class="essay-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <h2 class="essay-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
           <p class="essay-preview">{{ .Summary | truncate 160 }}</p>
-          <a href="{{ .Permalink }}" class="essay-read-more">Read Full Essay</a>
+          <a href="{{ .RelPermalink }}" class="essay-read-more">Read Full Essay</a>
         </div>
       </article>
       {{ end }}
