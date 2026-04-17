@@ -1,0 +1,7 @@
+baseURL = 'https://blog.yourwebsite.com/'
+languageCode = 'en-us'
+title = 'Essays by Nessa'
+
+[params]
+  author = "Nessa"
+  description = "Personal essays on life, love, and faith."
