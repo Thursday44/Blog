@@ -1,20 +1,30 @@
 {{ define "main" }}
 <article style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; line-height: 1.6;">
+  
+  <div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+    <a href="/" style="text-decoration: none; color: #1a2744; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
+       ← Home
+    </a>
+  </div>
+
   {{ if .Params.image }}
   <img src="{{ .Params.image }}" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
   {{ end }}
   
-  <h1 style="font-size: 2.5rem; margin-bottom: 10px;">{{ .Title }}</h1>
+  <h1 style="font-size: 2.5rem; margin-bottom: 10px; font-family: 'Cormorant Garamond', serif;">{{ .Title }}</h1>
   
   <div style="color: #666; margin-bottom: 30px;">
     <span>{{ .Date.Format "January 2, 2006" }}</span> | 
-    <span style="text-transform: uppercase; font-weight: bold;">{{ .Params.category }}</span>
+    <span style="text-transform: uppercase; font-weight: bold; color: #2c4a8a;">{{ .Params.category }}</span>
   </div>
 
-  <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
-
-  <div class="essay-content" style="font-size: 1.1rem; color: #333;">
+  <div class="essay-content" style="font-size: 1.15rem; color: #2a2118;">
     {{ .Content }}
   </div>
+
+  <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
+    <a href="/" style="text-decoration: none; color: #2c4a8a; font-weight: bold;">Return to Homepage</a>
+  </div>
+
 </article>
 {{ end }}
